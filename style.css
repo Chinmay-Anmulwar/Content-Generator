@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8f4e5, #f5f1db);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Form Box with glass effect */
+.form-box {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Heading */
+.form-box h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-box p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+select:focus,
+textarea:focus {
+  border-color: #7b4f00;
+  outline: none;
+}
+
+/* Button Style */
+button {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #9f6d00, #7b4f00);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #7b4f00, #9f6d00);
+  transform: scale(1.02);
+}
+
+/* Result Box */
+#result-box {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  color: #333;
+  display: block; /* Visible for now */
+}
+

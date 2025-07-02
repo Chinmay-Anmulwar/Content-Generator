@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Content Generator AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>Generate Content with AI</h1>
+      <p>Create  PPTs, images, reports and text instantly.</p>
+
+      <label for="type">Choose Type:</label>
+      <select id="type">
+        <option value="">Select</option>
+        <option value="image">Image</option>
+        <option value="Report">Report</option>
+        <option value="ppt">PPT</option>
+        <option value="text">Text</option>
+      </select>
+
+      <label for="topic">Your Topic:</label>
+      <textarea id="topic" placeholder="Prompt here"></textarea>
+
+      <button>Generate</button>
+    </div>
+
+    <div id="result-box">
+      
+    </div>
+  </div>
+</body>
+</html>
